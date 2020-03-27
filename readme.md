@@ -1,5 +1,5 @@
 # Wather App
-    NodeJs appliction that connect to weather API and return it to the front-end
+    NodeJs appliction that connect to weather API
 
 * Darksky API (weather)
 * Mapbox API (geocoding)
