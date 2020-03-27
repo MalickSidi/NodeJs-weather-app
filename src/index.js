@@ -31,13 +31,6 @@ app.get('/about', (req, res) => {
     });
 });
 
-app.get('/help', (req, res) => {
-    res.render('help', {
-        title: 'Help Page',
-        id: 98049839
-    });
-});
-
 app.get('/weather', (req, res) => {
     if (!req.query.address) {
         return res.send({
