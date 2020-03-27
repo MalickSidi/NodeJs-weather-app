@@ -1,0 +1,36 @@
+body{
+    box-sizing: border-box;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    background: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    color: #ccc;
+}
+
+img {
+    width: 300px;
+}
+
+.head {
+    color: honeydew;
+}
+p {
+    color: #fafafa;
+}
+
+input {
+    border: 1px solid #fafafa;
+    padding: 5px;
+    width: 70%;
+}
+
+button {
+    cursor: pointer;
+    background: #888;
+    border: solid 1px #888;
+    color: #fff;
+    padding: 5px;
+}

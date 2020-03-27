@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    {{>header}}
+    <h1>Weather App OOmmOO {{title}}</h1>
+    <p class="head">We Will find You the Weather in your erea just type it down</p>
+    <form>
+        <input type="search" name="address" id="address" placeholder="Type your address here">
+        <button type="submit">Search</button>
+    </form>
+    <img src="/img/img1.jpg" alt="">
+    <p id="data-1"></p>
+    <p id="data-2"></p>
+    {{>footer}}
+    <script src="/js/app.js"></script>
+</body>
+</html>
