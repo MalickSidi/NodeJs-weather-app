@@ -9,7 +9,7 @@ weather_form.addEventListener('submit', (e) => {
     const address = search_value.value;
     data1.textContent = 'Loading ...';
     data2.textContent = '';
-    fetch(`http://localhost:8080/weather?address=${address}`).then(res => {
+    fetch(`/weather?address=${address}`).then(res => {
         res.json().then(data => {
             data1.textContent = data.location;
             data2.textContent = `It's ${data.temperature} C outside and the humidity is ${data.humidity}% the probability of rain is ${data.precipProbability}%`;

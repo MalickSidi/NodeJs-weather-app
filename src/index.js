@@ -70,8 +70,8 @@ app.get('/product', (req, res) => {
         ]
     });
 });
-
-app.listen(8080, console.log('listing on port 8080'));
+const PORT = process.env.PORT || 8080;
+app.listen(PORT);
 
 // get_geocode(process.argv[2], (err, {location, latitude, longitude}) => {
 //     if (process.argv[2] == undefined) return console.log('No address provided');
