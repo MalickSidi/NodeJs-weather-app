@@ -34,3 +34,17 @@ button {
     color: #fff;
     padding: 5px;
 }
+
+li {
+    list-style: none;
+    display: inline;
+    padding: 5px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+a:hover {
+    color:#e0e0e0 ;
+}

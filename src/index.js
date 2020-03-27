@@ -19,7 +19,7 @@ app.set('views', views_path);
 app.get('/', (req, res) => {
     res.render('index', {
         title: 'Home',
-        id: 23449839
+        id: Math.round(Math.random() * 1000)
     });
 });
 
@@ -27,7 +27,7 @@ app.get('/', (req, res) => {
 app.get('/about', (req, res) => {
     res.render('about', {
         title: 'About page',
-        id: 78749839
+        id: Math.round(Math.random() * 1000)
     });
 });
 
@@ -54,22 +54,6 @@ app.get('/weather', (req, res) => {
     
 });
 
-app.get('/product', (req, res) => {
-    if (!req.query.search) {
-        return res.send({
-            error: 'please add search term'
-        });
-    }
-    const pr = req.query.search;
-    res.send({
-        product: [
-            'A3',
-            'D2',
-            'Y0',
-            pr
-        ]
-    });
-});
 const PORT = process.env.PORT || 8080;
 app.listen(PORT);
 

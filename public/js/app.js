@@ -12,7 +12,7 @@ weather_form.addEventListener('submit', (e) => {
     fetch(`/weather?address=${address}`).then(res => {
         res.json().then(data => {
             data1.textContent = data.location;
-            data2.textContent = `It's ${data.temperature} C outside and the humidity is ${data.humidity}% the probability of rain is ${data.precipProbability}%`;
+            data2.textContent = `It's ${data.temperature} C outside, the humidity is ${data.humidity}%, and the probability of rain is ${data.precipProbability}%`;
         });
     });
 });
